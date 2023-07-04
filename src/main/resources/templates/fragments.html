@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header th:fragment="header">
+    <div class="logo-title">
+        <img src="../static/pies.jpg" th:src="@{/pies.jpg}" alt="logo"/>
+        <div class="title-text">
+            <h1>Psia Myjnia</h1><br/>
+            <h2>Nowoczesne rozwiązania dla Twojego pupila</h2>
+        </div>
+    </div>
+    <ul>
+        <li><a class="btn btn-secondary" th:href="@{/}" href="/">Home</a></li>
+        <li><a class="btn btn-secondary" th:href="@{/jak_to_dziala}" href="/jak_to_dziala">Jak to działa</a></li>
+        <li><a class="btn btn-secondary" th:href="@{/kontakt}" href="/kontakt">Kontakt</a></li>
+    </ul>
+</header>
+
+<footer th:fragment="footer" class="py-4 bg-light text-secondary">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>INFORMACJE O NAS</h5>
+                <p>Działamy na rynku od 2000 roku, dostarczając klientom wysokiej jakości produkty i usługi.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>KONTAKT</h5>
+                <p>ul. Testowa, 55-330 Lutynia</p>
+                <p> tel. 500 000 001</p>
+                <p>email: kontakt@test.pl</p>
+            </div>
+            <div class="col-md-4">
+                <h5>TWÓJ PIES JAKO TESTER</h5>
+                Chcesz sprawdzić zanim kupisz? Jest możliwość wypożyczenia myjni!
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center mt-4 small">&copy; TI: All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout.html}">
+<head>
+    <title>Wiadomość wysłana</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container thx">
+        <h3>Dziękujemy za wysłanie wiadomości</h3>
+        <h5>Odpowiemy na adres <span th:text="${email}"></span> tak szybko, jak to możliwe.</h5>
+    </div>
+</div>
+</body>
+</html>
