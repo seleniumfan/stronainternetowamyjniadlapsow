@@ -1,0 +1,54 @@
+header img {
+    width: 234px;
+    margin-left: 32px;
+    margin-top: 20px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.title-text h1,
+.title-text h2 {
+    margin-right: 10px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin-right: 7px;
+    margin-top: 10px;
+}
+
+ul li a {
+    width: 113px;
+}
+
+.thx {
+    margin-top: 10px;
+    background: aquamarine;
+    padding: 20px;
+}
+
+header, footer {
+    background: lightgray;
+}
+
+header {
+    padding-bottom: 10px;
+}
+
+.contact-form {
+    max-width: 40%;
+}
